@@ -26,6 +26,7 @@ body {
     border: none;
     background-color: #fb6f92;
     transition: .5s;
+    color: #ffffff;
 }
 
 #correct_answer{
@@ -40,9 +41,10 @@ body {
     border: none;
     background-color: #fb6f92;
     transition: .3s;
+    color: #ffffff;
 }
 
-.centerpls{
+#valentines{
     position: absolute;
     left: 50%;
     top: 50%;
@@ -53,13 +55,14 @@ body {
     align-items: center;
     flex-direction:column;
     justify-content:center;
+    /* display:initial; */
 }
 
-#yes_btn{
+#yes{
     padding:10%;
 }
 
-#no_btn{
+#no{
     padding:10%;
 }
 
@@ -70,6 +73,9 @@ h1{
 
 }
 
+#test{
+    display: none;
+}
 /* #avoid {
     position: absolute;
     background-color: dodgerblue;
