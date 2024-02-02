@@ -8,7 +8,7 @@
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
     align-items: center;
-  }
+}
   
 body {
     background-color: #ffe5ec;
@@ -53,10 +53,6 @@ body {
     align-items: center;
     flex-direction:column;
     justify-content:center;
-}
-
-#question{
-    /* padding:10%; */
 }
 
 #yes_btn{
