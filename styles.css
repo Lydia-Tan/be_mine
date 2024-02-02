@@ -25,7 +25,7 @@ body {
     border-radius: 1em ;
     border: none;
     background-color: #fb6f92;
-    transition: .3s;
+    transition: .5s;
 }
 
 #correct_answer{
