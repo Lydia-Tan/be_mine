@@ -7,21 +7,21 @@ const wrong_msg_div = document.getElementById('wrong_choice');
 const yay_div = document.getElementById('right_choice');
 
 
-var boo_images = ["try_again.jpeg", "bfr.jpeg","-.-.jpg","cry_me_a_river.jpg","fight.jpg","fu.jpg","halp.jpg","sob.jpg","wtf.jpg"];
+var boo_images = ["try_again.jpeg", "bfr.jpeg","-.-.JPG","cry_me_a_river.JPG","fight.JPG","fu.JPG","halp.JPG","sob.JPG","wtf.JPG"];
 
 var boo_messages = ["Nuh-uh. Try again.", "Why are you clicking no?", "Wrong answer.", "Not quite right...", "Psttt you should click yes", "Bffr.", "Let's try again..."];
 
-var yay_images = ["rizz.jpg", "saranghey.jpg", "muah.jpg", "luvu.jpg"];
+var yay_images = ["rizz.JPG", "saranghey.JPG", "muah.JPG", "luvu.JPG"];
 
 var yay_dict = {
-    "rizz.jpg": "hi bbg ;)",
-    "saranghey.jpg": "hey sexy",
-    "muah.jpg": "MUAAHHH",
-    "luvu.jpg": "🫰🫰🫰🫰",
+    "rizz.JPG": "hi bbg ;)",
+    "saranghey.JPG": "hey sexy",
+    "muah.JPG": "MUAAHHH",
+    "luvu.JPG": "🫰🫰🫰🫰",
     // "heart.jpg": "🫰🫰🫰🫰",
 }
 
-var love_images = ["heart.jpg", "heart2.jpg", "heart3.jpg", "rizz.jpg", "saranghey.jpg", "muah.jpg", "luvu.jpg"];
+var love_images = ["heart.JPG", "heart2.JPG", "heart3.JPG", "rizz.JPG", "saranghey.JPG", "muah.JPG", "luvu.JPG"];
 
 var lives = 2;
 
