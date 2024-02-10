@@ -122,6 +122,17 @@ h1{
     display: none;
 }
 
+#nut{
+    display: none;
+    position:absolute;
+}
+
+/* #nut{
+    display: flex;
+    top: 0;
+    left: 0;
+} */
+
 #boo_header{
     display: flex;
     flex-direction: column;

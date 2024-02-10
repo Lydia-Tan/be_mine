@@ -11,10 +11,15 @@ var boo_images = ["try_again.jpeg", "bfr.jpeg","-.-.jpg","cry_me_a_river.jpg","f
 
 var boo_messages = ["Nuh-uh. Try again.", "Why are you clicking no?", "Wrong answer.", "Not quite right...", "Psttt you should click yes", "Bffr.", "Let's try again..."];
 
-// var yay_dict = {
-//     "rizz.jpg": "u come here often? ;)",
-//     ""
-// }
+var yay_images = ["rizz.jpg", "saranghey.jpg", "muah.jpg", "luvu.jpg"];
+
+var yay_dict = {
+    "rizz.jpg": "hi bbg ;)",
+    "saranghey.jpg": "hey sexy",
+    "muah.jpg": "MUAAHHH",
+    "luvu.jpg": "🫰🫰🫰🫰",
+    // "heart.jpg": "🫰🫰🫰🫰",
+}
 
 var love_images = ["heart.jpg", "heart2.jpg", "heart3.jpg", "rizz.jpg", "saranghey.jpg", "muah.jpg", "luvu.jpg"];
 
@@ -31,18 +36,6 @@ wrong_btn.addEventListener('mouseover', function () {
 // when no is clicked trigger the upset page
 wrong_btn.addEventListener('click', function () {
 
-    console.log(count)
-    console.log(lives)
-    // if(lives == 0){
-    //     // game over
-    //     alert("GAME OVER")
-    //     game_over.style.display = "flex";
-    //     valentines.style.display = "none";
-    // }
-    // else{
-
-    // alert('y u choose no >:(')
-    lives -= 1;
     count += 1;
     var random_img = Math.floor(Math.random()*boo_images.length);
     var random_msg = Math.floor(Math.random()*boo_messages.length);
@@ -59,7 +52,6 @@ wrong_btn.addEventListener('click', function () {
     else{
         document.getElementById("redo").innerHTML = "🤨🤨🤨...sus!!";
     }
-    // console.log("images/" + boo_images[random_img])
 
     document.canvas.src="images/" + boo_images[random_img];
 
@@ -68,32 +60,25 @@ wrong_btn.addEventListener('click', function () {
     valentines.style.display = "none";
     yay_div.style.display = "none";
     wrong_msg_div.style.display = "flex";
-    // valentines.style.visibility = "hidden";
-    // wrong_msg_div.style.visibility = "visible";
-    // yay_div.style.display = "flex";
-    // yay_div.style.visibility = "visible";
-    
-    // }
+
 })
 
 // handle when yes is clicked
 right_btn.addEventListener('click', function () {
-    alert('nice')
+    alert('noice')
     
-    var random_yay = Math.floor(Math.random()*love_images.length);
+    // var random_yay = Math.floor(Math.random()*love_images.length);
+
+    // document.canvas_2.src="images/"+love_images[random_yay];
+    var random_yay = Math.floor(Math.random()* 4);
     
-    document.canvas_2.src="images/"+love_images[random_yay];
+    document.canvas_2.src="images/"+yay_images[random_yay];
 
     // document.canvas_2.src="images/kiss.jpeg"
     
-    document.getElementById("yay_img").style.width = "100%";
+    document.getElementById("yay_img").style.width = "451px";
     
-    // // valentines.style.display = "none";
-    // valentines.style.visibility = "hidden";
-    // // wrong_msg_div.style.display = "none";
-    // wrong_msg_div.style.visibility = "hidden";
-    // // yay_div.style.display = "flex";
-    // yay_div.style.visibility = "visible";
+    document.getElementById("back").innerHTML = yay_dict[yay_images[random_yay]];
 
     valentines.style.display = "none";
     yay_div.style.display = "flex";
@@ -108,12 +93,6 @@ redo.addEventListener('click', function () {
     valentines.style.display = "flex";
     wrong_msg_div.style.display = "none";
     yay_div.style.display = "none";
-
-    // valentines.style.visibility = "visible";
-    // wrong_msg_div.style.display = "none";
-    // wrong_msg_div.style.visibility = "hidden";
-    // yay_div.style.display = "flex";
-    // yay_div.style.visibility = "hidden";
 })
 
 var back =  document.getElementById('back');
@@ -123,16 +102,36 @@ back.addEventListener('click', function () {
     valentines.style.display = "flex";
     wrong_msg_div.style.display = "none";
     yay_div.style.display = "none";
-
-    // valentines.style.visibility = "visible";
-    // wrong_msg_div.style.display = "none";
-    // wrong_msg_div.style.visibility = "hidden";
-    // yay_div.style.display = "flex";
-    // yay_div.style.visibility = "hidden";
 })
 
-document.addEventListener('keypress', function easter_egg(e){
-    if(e.key === "Enter") {
-        alert("easter egg here")
-    }
-});
+// document.addEventListener('keypress', function easter_egg(e){
+//     if(e.key === "Enter") {
+//         // alert("easter egg here")
+//         const user_input = prompt("You've found the easter egg! Now what's the password?");
+//         if(user_input === "nate" || user_input === "Nate"){
+//             // while(true){
+//             //     nate();
+//             // }
+//         }   
+//     }
+// });
+
+// function nate() {
+//     let id = null;
+//     const nut = document.getElementById("nut");   
+//     nut.style.display = "block"; 
+//     nut.style.top = "350px"; 
+//     const heart = document.getElementById("heart");   
+//     let pos = 0;
+//     clearInterval(id);
+//     id = setInterval(frame, 5);
+//     function frame() {
+//       if (pos == 0) {
+//         clearInterval(id);
+//       } else {
+//         pos--; 
+//         nut.style.top = pos + "px"; 
+//         // nut.style.left = pos + "px"; 
+//       }
+//     }
+//   }
