@@ -59,37 +59,34 @@ wrong_btn.addEventListener('click', function () {
     else{
         document.getElementById("redo").innerHTML = "🤨🤨🤨...sus!!";
     }
+    // console.log("images/" + boo_images[random_img])
 
-    document.canvas.src="images/"+boo_images[random_img];
+    document.canvas.src="images/" + boo_images[random_img];
 
     document.getElementById("boo_img").style.width = "80%";
-
-    valentines.style.display = "none";
-    // yay_div.style.display = "none";
     
-    // valentines.style.visibility = "hidden";
+    valentines.style.display = "none";
+    yay_div.style.display = "none";
     wrong_msg_div.style.display = "flex";
+    // valentines.style.visibility = "hidden";
     // wrong_msg_div.style.visibility = "visible";
     // yay_div.style.display = "flex";
     // yay_div.style.visibility = "visible";
-
+    
     // }
 })
 
 // handle when yes is clicked
 right_btn.addEventListener('click', function () {
     alert('nice')
+    
+    var random_yay = Math.floor(Math.random()*love_images.length);
+    
+    document.canvas_2.src="images/"+love_images[random_yay];
 
-    // var random_yay = Math.floor(Math.random()*love_images.length);
-    // // var random_msg = Math.floor(Math.random()*love_messages.length);
+    // document.canvas_2.src="images/kiss.jpeg"
     
-    // // document.getElementById("boo_msg").innerHTML = boo_messages[random_msg];
-    
-    // // document.getElementById("redo").innerHTML = "Take " + count;
-    
-    // document.canvas.src="images/"+love_images[random_yay];
-    
-    // document.getElementById("boo_img").style.width = "80%";
+    document.getElementById("yay_img").style.width = "100%";
     
     // // valentines.style.display = "none";
     // valentines.style.visibility = "hidden";
@@ -97,6 +94,10 @@ right_btn.addEventListener('click', function () {
     // wrong_msg_div.style.visibility = "hidden";
     // // yay_div.style.display = "flex";
     // yay_div.style.visibility = "visible";
+
+    valentines.style.display = "none";
+    yay_div.style.display = "flex";
+    wrong_msg_div.style.display = "none";
     
 })
 
@@ -106,7 +107,22 @@ redo.addEventListener('click', function () {
     // location.href = "index.html";
     valentines.style.display = "flex";
     wrong_msg_div.style.display = "none";
-    // yay_div.style.display = "none";
+    yay_div.style.display = "none";
+
+    // valentines.style.visibility = "visible";
+    // wrong_msg_div.style.display = "none";
+    // wrong_msg_div.style.visibility = "hidden";
+    // yay_div.style.display = "flex";
+    // yay_div.style.visibility = "hidden";
+})
+
+var back =  document.getElementById('back');
+
+back.addEventListener('click', function () {
+    // location.href = "index.html";
+    valentines.style.display = "flex";
+    wrong_msg_div.style.display = "none";
+    yay_div.style.display = "none";
 
     // valentines.style.visibility = "visible";
     // wrong_msg_div.style.display = "none";
