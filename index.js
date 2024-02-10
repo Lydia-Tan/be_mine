@@ -53,7 +53,7 @@ wrong_btn.addEventListener('click', function () {
         document.getElementById("redo").innerHTML = "🤨🤨🤨...sus!!";
     }
 
-    document.canvas.src="images/" + boo_images[random_img];
+    document.canvas.src="./images/" + boo_images[random_img];
 
     document.getElementById("boo_img").style.width = "80%";
     
@@ -72,7 +72,7 @@ right_btn.addEventListener('click', function () {
     // document.canvas_2.src="images/"+love_images[random_yay];
     var random_yay = Math.floor(Math.random()* 4);
     
-    document.canvas_2.src="images/"+yay_images[random_yay];
+    document.canvas_2.src="./images/"+yay_images[random_yay];
 
     // document.canvas_2.src="images/kiss.jpeg"
     
