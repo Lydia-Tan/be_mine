@@ -13,10 +13,24 @@
 body {
     background-color: #ffe5ec;
 }
-  
-#avoid {
+
+button {
     position: absolute;
     /* top: 60%; */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 4rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    border-radius: 1em ;
+    border: none;
+    background-color: #fb6f92;
+    transition: .5s;
+    color: #ffffff;
+}
+/* 
+#avoid {
+    position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 4rem;
@@ -31,7 +45,6 @@ body {
 
 #correct_answer{
     position: absolute;
-    /* top: 50%; */
     left: 50%;
     transform: translate(-50%, -50%);
     height: 4rem;
@@ -42,7 +55,7 @@ body {
     background-color: #fb6f92;
     transition: .3s;
     color: #ffffff;
-}
+} */
 
 #valentines{
     position: absolute;
@@ -73,8 +86,48 @@ h1{
 
 }
 
-#test{
+#wrong_choice{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content:center;
+}
+
+#right_choice{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display:flex;
+    align-items: center;
+    flex-direction:column;
+    justify-content:center;
+}
+
+#wrong_choice{
     display: none;
+}
+
+#right_choice{
+    display: none;
+}
+
+#boo_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#yay_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 /* #avoid {
     position: absolute;
