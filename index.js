@@ -46,7 +46,7 @@ wrong_btn.addEventListener('click', function () {
         document.getElementById("redo").innerHTML = "Take " + count;
     }
     else if(count < 10){
-        document.getElementById("redo").innerHTML = "🤨 Take " + Math.floor(Math.random() * 123);
+        document.getElementById("redo").innerHTML = "🤨 Too many retries" + Math.floor(Math.random() * 123);
         ;
     }
     else{
